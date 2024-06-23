@@ -10,28 +10,30 @@
   </tr>
 </table> */}
 const hostnamesBTN = document.querySelector("#hostnames");
-let hostTable= document.createElement("table");
+let hostTable = document.createElement("table");
 
 const createHostname = (hostnames) => {
-    const { id, projectName, hostname } = hostnames;
-    let hostnameRow= document.createElement("tr");
-    hostnameRow.id=id;
-    hostnameRow.innerHTML=`
+  const { id, projectName, hostname } = hostnames;
+  let hostnameRow = document.createElement("tr");
+  hostnameRow.id = id;
+  hostnameRow.innerHTML = `
         <td>${projectName}</td>
         <td>${hostname}</td>
     `;
-    if(id%2==0){
-        hostnameRow.style.backgroundColor="rgb(255, 0, 106)";
-    }
-    hostTable.appendChild(hostnameRow); 
-    return hostnameRow;
+  if (id % 2 == 0) {
+    hostnameRow.style.backgroundColor = "var(--tfxPink)";
+  } else {
+    hostnameRow.style.backgroundColor = "var(--tfxBlue)";
+  }
+  hostTable.appendChild(hostnameRow);
+  return hostnameRow;
 }
 hostnamesBTN.addEventListener("click", () => {
-    _main.innerHTML = "";
-    _main.className="";
-    _main.classList.add("hostnameLayout");
-    _main.appendChild(hostTable);
-    hostnamesDATA.forEach((hostname) => {
-        createHostname(hostname);
-    });
+  _main.innerHTML = "";
+  _main.className = "";
+  _main.classList.add("hostnameLayout");
+  _main.appendChild(hostTable);
+  hostnamesDATA.forEach((hostname) => {
+    createHostname(hostname);
+  });
 });

@@ -1,27 +1,27 @@
 const DATA=[
     {
         id:0,
-        projectName: "V10",
+        projectName: "Project_Name0",
         pieces:0
     },
     {
         id:1,
-        projectName: "V11",
+        projectName: "Project_Name1",
         pieces:0
     },
     {
         id:2,
-        projectName: "Garanti Abacus",
+        projectName: "Project_Name2",
         pieces:0
     },
     {
         id:3,
-        projectName: "INVIA",
+        projectName: "Project_Name3",
         pieces:0
     },
     {
         id:4,
-        projectName: "AKBANK",
+        projectName: "Project_Name4",
         pieces:0
     }
 ];

@@ -2,8 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: black;
+    color: var(--black);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    scroll-behavior: smooth;
 }
 .project:nth-child(1n) {
     background-color: #ffe3c5;
@@ -20,36 +21,13 @@
 .project:nth-child(4n) {
     background-color: #cb96ff;
 }
-
-.project:nth-child(5n) {
-    background-color: #00a4ff;
-}
-
-.project:nth-child(6n) {
-    background-color: #aeffcf;
-}
-
-.project:nth-child(7n) {
-    background-color: #ee5d7d;
-}
-
-.project:nth-child(8n) {
-    background-color: #b6df9c;
-}
-
-.project:nth-child(9n) {
-    background-color: #ff90a4;
-}
-
-.project:nth-child(10n) {
-    background-color: #9695e1;
-}
 header{
     width: 100%;
-    background-color: rgb(0, 0, 110);
+    background-color: var(--tfxBlue);
+    margin-bottom: 25px;
 }
 .title{
-    color: white;
+    color: var(--white);
     text-transform: uppercase;
     text-align: center;
     padding: 5px;
@@ -71,8 +49,10 @@ header{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    margin: 20px;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    margin-bottom:25px;
+    margin-right:25px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 15px 2px var(--tfxBlue);
 }
 .projectText{
     width: 50px;
@@ -81,7 +61,7 @@ header{
     outline: none;
     caret-color: transparent;
     margin: 5px;
-    border: 2px solid black;
+    border: 2px solid var(--black);
 }
 .project h1{
     font-size: 1.5em;
@@ -95,8 +75,8 @@ header{
     flex-direction: row-reverse;
 }
 .fixedBtn{
-    background-color: rgb(0, 0, 110);
-    color: white;
+    background-color: var(--tfxBlue);
+    color: var(--white);
     font-size: bold;
     padding: 10px;
     border-top-right-radius: 10px;
@@ -107,7 +87,7 @@ header{
 }
 .pdfLayout{
     width: 90%;
-    margin: 10px auto;
+    margin: 0 auto;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -115,11 +95,13 @@ header{
 }
 .pdfLayout section{
     margin: 10px 0;
-    padding: 10px;
+    margin-right: 10px;
 }
 .pdfLayout section h2{
-    border-bottom: 2px solid rgb(0, 0, 110);
-    margin: 10px 0;
+    border-bottom: 2px solid var(--tfxBlue);
+    color: var(--tfxBlue);
+    font-weight: bolder;
+    margin-bottom: 10px;
 }
 .hostnameLayout{
     width: 100%;
@@ -127,13 +109,15 @@ header{
     justify-content: center;
 }
 .hostnameLayout table{
-    width: 90%;
+    width: 60%;
     border-collapse: collapse;
-    text-align: center;
-    margin-top: 15px;
+    margin-top: 35px;
 }
 .hostnameLayout table td{
-    border: 2px solid black;
-    padding: 10px;
+    border: 3px solid var(--white);
+    padding: 15px;
     font-weight: bold;
+    color: var(--white);
+    text-align: center;
+    font-size: 1.2em;
 }
