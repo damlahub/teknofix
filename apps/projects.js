@@ -1,7 +1,9 @@
 const _main = document.querySelector("main");
 const projects = document.querySelector("#projects");
 const totalElement = document.querySelector("#total");
-
+totalElement.addEventListener("click", ()=>{
+    location.reload();
+});
 const loadText = (id) => {
     const savedText = localStorage.getItem(`project_${id}_text`);
     return savedText ? savedText : 0;
@@ -41,8 +43,6 @@ const createProject = (project) => {
 
     return projectItem;
 };
-
-
 
 DATA.forEach((project) => {
     projects.appendChild(createProject(project));
