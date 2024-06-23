@@ -25,3 +25,24 @@ const DATA=[
         pieces:0
     }
 ];
+const pdfDATA=[
+    {
+        id:0,
+        projectName:"Project_Name",
+        path:"test"
+    },
+    {
+        id:1,
+        projectName:"Project_Name1",
+        path:"test1"
+    },{
+        id:2,
+        projectName:"Project_Name2",
+        path:"test2"
+    },
+    {
+        id:3,
+        projectName:"Project_Name3",
+        path:"test3"
+    },
+];
