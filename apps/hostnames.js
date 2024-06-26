@@ -30,6 +30,7 @@ const createHostname = (hostnames) => {
 }
 hostnamesBTN.addEventListener("click", () => {
   _main.innerHTML = "";
+  hostTable.innerHTML = "";
   _main.className = "";
   _main.classList.add("hostnameLayout");
   _main.appendChild(hostTable);

@@ -12,7 +12,7 @@ const createPDF = (pdf) => {
     pdfObject.type = "application/pdf";
     pdfObject.width = "500px";
     pdfObject.height = "600px";
-    
+
     pdfContainer.appendChild(pdfHeading);
     pdfContainer.appendChild(pdfObject);
     _main.appendChild(pdfContainer);
@@ -20,6 +20,7 @@ const createPDF = (pdf) => {
 }
 installationsBtn.addEventListener("click", () => {
     _main.innerHTML = "";
+    _main.className = "";
     _main.classList.add("pdfLayout");
     pdfDATA.forEach((pdf) => {
         createPDF(pdf);
