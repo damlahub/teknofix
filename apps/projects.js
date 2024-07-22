@@ -30,8 +30,7 @@ const createProject = (project) => {
 
     projectItem.innerHTML = `
         <h1>${projectName}</h1>
-        <h3><input type="text" class="projectText" value="${text}" /></h3>
-        <h3>ADET</h3>
+        <h3><input type="text" class="projectText" value="${text}" />pcs.</h3>
     `;
 
     const inputElem = projectItem.querySelector(".projectText");

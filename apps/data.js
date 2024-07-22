@@ -2,27 +2,22 @@ const DATA=[
     {
         id:0,
         projectName: "Project_Name0",
-        pieces:0
     },
     {
         id:1,
         projectName: "Project_Name1",
-        pieces:0
     },
     {
         id:2,
         projectName: "Project_Name2",
-        pieces:0
     },
     {
         id:3,
         projectName: "Project_Name3",
-        pieces:0
     },
     {
         id:4,
         projectName: "Project_Name4",
-        pieces:0
     }
 ];
 const pdfDATA=[
